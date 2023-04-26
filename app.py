@@ -8,7 +8,7 @@ from config import ApplicationConfig
 from models import db, User, Order, Price
 import os
 
-app = Flask(__name__, static_folder='/client/build', static_url_path='')
+app = Flask(__name__, static_folder='client/build', static_url_path='')
 # CORS(app, supports_credentials=True)
 
 app.config.from_object(ApplicationConfig)
