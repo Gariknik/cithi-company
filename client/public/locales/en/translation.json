@@ -1,0 +1,219 @@
+{	
+	"header": {
+		"alts": {
+			"iconLogo": "Logo"
+		},
+		"menu": {
+			"services": "Services",
+			"about": "About Us",
+			"homepage": "Main",
+			"contacts": "Contacts",
+			"auth": "SingIn/SingUp",
+			"out": "SingOut",
+			"cabinet": "Cabinet"
+		}
+	},
+	"footer": {
+		"alts": {
+			"iconFacebook": "Icon for link to Facebook",
+			"iconInstagram": "Icon for link to Instagram"
+		},
+		"menu": {
+			"services": "Services",
+			"about": "About Us",
+			"homepage": "Main",
+			"contacts": "Contacts"
+		},
+		"copyright": "© 2023 All Rights Reserved Privacy Policy"
+	},
+	"auth": {
+		"buttonLog": "SingIn",
+		"buttonReg": "SingUp"
+	},
+	"loginpage": {
+		"title": "login here using your username and password",
+		"links": {
+			"login": "Login",
+			"passwordReset": "Forget password or login?"
+		},
+		"placeholders": {
+			"email": "Username",
+			"password": "Password"
+		},
+		"errors": {
+			"validEmail": "Invalid address entered",
+			"validPassword": "A space character is not allowed in the password",
+			"minLength": "Minimum 6 characters",
+			"maxLength": "Maximum 25 characters",
+			"required": "Required field"
+		},
+		"alts": {
+			"iconPassword": "Icon for a password",
+			"iconLogin": "Icon for a cabinet link",
+			"iconEmail": "Icon for a email"
+		}
+	},
+	"reset": {
+		"title": "Enter your email so we can send you your password",
+		"links": {
+			"send": "Get a password",
+			"return": "Return back to Login"
+		},
+		"placeholders": {
+			"email": "email"
+		},
+		"errors": {
+			"validEmail": "Invalid address entered"
+		},
+		"alts": {
+			"iconEmail": "Icon for a email"
+		}
+	},
+	"regpage": {
+		"title": "Create to personal account",
+		"links": {
+			"register": "Sign Up",
+			"passwordReset": "Forget password or login?"
+		},
+		"placeholders": {
+			"username": "Username",
+			"email": "Email",
+			"password": "Password"
+		},
+		"errors": {
+			"validEmail": "Invalid address entered",
+			"validPassword": "A space character is not allowed in the password",
+			"minLength": "Minimum 6 characters",
+			"maxLength": "Maximum 25 characters",
+			"required": "Required field"
+		},
+		"alts": {
+			"iconPassword": "Icon for a password",
+			"iconLogin": "Icon for a cabinet link",
+			"iconUser": "Icon for a username",
+			"iconEmail": "Icon for a email"
+		}
+	},
+	"homepage": {
+		"titles": {
+			"first": "Provision of IT services",
+			"second": "Hi, meet CITHI",
+			"third": "You have the best workers",
+			"h": "Services"
+		},
+		"link": "To learn more",
+		"paragraphs": {
+			"first": "Quality and time guaranteed",
+			"second": "Everyone can get diagnostics in the direction of IT, our company will help you with this",
+			"third": {
+				"cardOne": "Web-design",
+				"cardTwo": "Computer Repair",
+				"cardThree": "Programming"
+			}
+		},
+		"button":  "Application",
+		"alts": {
+			"iconLogin": "icon for a cabinet link",
+			"iconСreateAccount": "icon for a user registration link",
+			"iconСreateService": "icon for a service registration link",
+			"firstCard": "icon for first card",
+			"secondCard": "icon for second card",
+			"thirdCard": "icon for third card"
+		}
+	},
+	"services": {
+		"titles": {
+			"title": "IT projects CITHI",
+			"h": "Services",
+			"firstCard": "Web-design",
+			"secondCard": "Computer Repair",
+			"thirdCard": "Programming"
+		},
+		"texts": {
+			"textInBlock": "Сhoose the service you need",
+			"firstCard": "landing page layouts, websites for companies, online stores, logos..",
+			"secondCard": "landing page layouts, websites for companies, online stores, logos..",
+			"thirdCard": "landing page layouts, websites for companies, online stores, logos.."
+		},
+		"alts": {
+			"firstCard": "icon for first card",
+			"secondCard": "icon for second card",
+			"thirdCard": "icon for third card"
+		}
+	},
+	"services1": {
+		"titles": {
+			"title": "Web-design",
+			"h": "Services",
+			"firstCard": "Logotype",
+			"secondCard": "Landing page",
+			"thirdCard": "Set of icons",
+			"fourthCard": "Website"
+		},
+		"btnCards": "Application",
+		"btnDiff": "See more"
+	},
+	"services2": {
+		"titles": {
+			"title": "Computer Repair",
+			"h": "Services",
+			"firstCard": "Prevention",
+			"secondCard": "Repair",
+			"thirdCard": "Equipment",
+			"fourthCard": "Diagnostics"
+		},
+		"btnCards": "Application",
+		"btnDiff": "See more"
+	},
+	"services3": {
+		"titles": {
+			"title": "Programming",
+			"h": "Services",
+			"firstCard": "Coding",
+			"secondCard": "Consultancy",
+			"thirdCard": "Testing",
+			"fourthCard": "Development"
+		},
+		"btnCards": "Application",
+		"btnDiff": "See more"
+	},
+	"about": {
+		"titles": {
+			"title": "About us",
+			"titleSecond": "CITHI Ukrainian company of IT services"
+		},
+		"texts": {
+			"paragraph": "It contains many advantages that will help every business grow at times. We are your uniqueness and time",
+			"statNameFirst": "Experience",
+			"statNameSecond": "Projects",
+			"statNameThird": "Reviews"
+		}
+	},
+	"contacts": {
+		"titles": {
+			"title": "Contact",
+			"titleHours": "Hours of Operation",
+			"titlePhone": "Phone",
+			"titleEmail": "Email"
+		},
+		"texts": {
+			"textHours": "Monday-Saturday10 am - 7 pm",
+			"textPhone1": "380994667650",
+			"textPhone2": "380994667650",
+			"textEmail": "cithi2023@gmail.com"
+		}
+	},
+    "successful": {
+        "message1": "successful",
+        "message2": "successful"
+    },
+	"cabinet": {
+		"title": "Бібліотека сервісів",
+		"username": "Username",
+		"email": "Email",
+		"alts": {
+			"iconMain": "icon main",
+			"iconTrash": "icon trash"
+		}
+	}
+}

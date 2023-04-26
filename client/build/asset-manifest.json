@@ -1,0 +1,43 @@
+{
+  "files": {
+    "main.js": "/static/js/main.f0dd3dc1.js",
+    "static/js/787.c4e7f8f9.chunk.js": "/static/js/787.c4e7f8f9.chunk.js",
+    "static/media/secondImgFirstSection.svg": "/static/media/secondImgFirstSection.be218e8f391e362a7698eee9830f9ca9.svg",
+    "static/media/thirdImgFirstSection.svg": "/static/media/thirdImgFirstSection.cbc93e864a14a0ab1c88139636ea4b49.svg",
+    "static/media/firstImgFirstSection.svg": "/static/media/firstImgFirstSection.51ba2cc8a223d86b50faeba8c507526e.svg",
+    "static/media/AboutBackground.svg": "/static/media/AboutBackground.75de9346fdfd527f6f90c3edfeecf394.svg",
+    "static/media/Picture.svg": "/static/media/Picture.3c5fca4e53eabbb854741465ca12bfaa.svg",
+    "static/media/SecondSectionPicture.svg": "/static/media/SecondSectionPicture.9426d9b9daa2901c0bc6a57d456dc230.svg",
+    "static/media/Lato-Bold.woff": "/static/media/Lato-Bold.6ef061ba39f5e614e4f2.woff",
+    "static/media/Lato-Semibold.woff": "/static/media/Lato-Semibold.396e676e7459edfa635c.woff",
+    "static/media/Lato-Regular.woff": "/static/media/Lato-Regular.0c0f369e632be6c40323.woff",
+    "static/media/userAvatar.svg": "/static/media/userAvatar.267cdf814f1f311dfd26ad1ef79ef4ee.svg",
+    "static/media/ThirdSectionSecondCardImg.svg": "/static/media/ThirdSectionSecondCardImg.92ce6eab69a610d39f3198ed19d7679d.svg",
+    "static/media/ThirdSectionFirstCardImg.svg": "/static/media/ThirdSectionFirstCardImg.e82503a0954f3fe13023f99d2c670833.svg",
+    "static/media/ThirdSectionThirdCardImg.svg": "/static/media/ThirdSectionThirdCardImg.a0f6366e9a223a9846d8af10f80d3ca3.svg",
+    "static/media/IconGoogle.svg": "/static/media/IconGoogle.5d6a988cf2f4ed0e1ea01aa5beb9d582.svg",
+    "static/media/IconAddUser.svg": "/static/media/IconAddUser.629e4d46b6b7ba797fb81746d58e7a29.svg",
+    "static/media/PasswordIcon.svg": "/static/media/PasswordIcon.c9122f13eaf7144f028045fc419e6b1d.svg",
+    "static/media/IconLogo.svg": "/static/media/IconLogo.e973e57b8a3a3b14660d7c91f9d4af41.svg",
+    "static/media/EmailIcon.svg": "/static/media/EmailIcon.87987ced2650c7aa3d68e51c27700502.svg",
+    "static/media/UserIcon.svg": "/static/media/UserIcon.906ad87866a22bed1b897661ed329fde.svg",
+    "static/media/IconLogin.svg": "/static/media/IconLogin.d7545af1a78f165365f0c29285455c90.svg",
+    "static/media/checkMark.svg": "/static/media/checkMark.28ea1c23e6113a8effde1404386413d8.svg",
+    "index.html": "/index.html",
+    "static/media/ShemBottom.svg": "/static/media/ShemBottom.0f4d23d3843ee3419de199e45567e06b.svg",
+    "static/media/getFetch.cjs": "/static/media/getFetch.40f37ddea2378391108f.cjs",
+    "static/media/trash.svg": "/static/media/trash.28f6a219b1fd5da0aa80a75844ccd754.svg",
+    "static/media/ShemTop.svg": "/static/media/ShemTop.738c2677ffdc4469a6b0610770837107.svg",
+    "static/media/ThirdSectionBackground.svg": "/static/media/ThirdSectionBackground.f7d7886f7760f60a19fb77d605b88a62.svg",
+    "static/media/EllipseGreen.svg": "/static/media/EllipseGreen.e58fc1a61ed36f499c8a9c48b062c90d.svg",
+    "static/media/EllipseYellow.svg": "/static/media/EllipseYellow.2cc48bf5bc0b67dc69a38bf60c1d34c4.svg",
+    "static/media/ThirdSectionVectorTwo.svg": "/static/media/ThirdSectionVectorTwo.27e96a3b69c1b4a49977cc0567ce4dee.svg",
+    "static/media/ThirdSectionVectorOne.svg": "/static/media/ThirdSectionVectorOne.91460c8bb1e97c3321d6ed3c15d57901.svg",
+    "static/media/ThirdSectionVectorThree.svg": "/static/media/ThirdSectionVectorThree.91460c8bb1e97c3321d6ed3c15d57901.svg",
+    "main.f0dd3dc1.js.map": "/static/js/main.f0dd3dc1.js.map",
+    "787.c4e7f8f9.chunk.js.map": "/static/js/787.c4e7f8f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.f0dd3dc1.js"
+  ]
+}
