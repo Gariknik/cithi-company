@@ -1,7 +1,6 @@
 from flask import Flask, request, jsonify, session, render_template, make_response
 from flask.helpers import send_from_directory
 from flask_cors import CORS, cross_origin
-from flask_session import Session
 from sqlalchemy import func
 from flask_mail import Mail, Message
 from config import ApplicationConfig
@@ -12,9 +11,7 @@ app = Flask(__name__, static_folder='client/build', static_url_path='')
 # CORS(app, supports_credentials=True)
 
 app.config.from_object(ApplicationConfig)
-
-CORS(app, resources={r"/*": {"origins": "*"}}, supports_credentials=True)
-server_session = Session(app)
+CORS(app)
 db.init_app(app)
 
 app.config['SECRET_KEY'] = 'a really really really really long secret key'
@@ -74,7 +71,6 @@ def serve():
 
 
 @app.route("/register", methods=["POST"])
-@cross_origin()
 def register_user():
     username = request.json["username"]
     email = request.json["email"]
@@ -90,7 +86,6 @@ def register_user():
     db.session.add(new_user)
     db.session.commit()
 
-    session["user_id"] = new_user.id
     response = jsonify({'message': 'success'})
     response.headers.add('Access-Control-Allow-Origin', 'http://localhost:3000')
 
@@ -106,10 +101,10 @@ def register_user():
 
 
 @app.route("/login", methods=["POST"])
-@cross_origin()
 def login_user():
     email = request.json["email"]
     password = request.json["password"]
+    print(email)
 
     user = User.query.filter_by(email=email.lower()).first()
 
@@ -119,7 +114,6 @@ def login_user():
     if password != user.password:
         return jsonify({"status": "error", "messageErr": "Unauthorized"}), 401
 
-    session["user_id"] = user.id
 
     return jsonify({
         "status": "ok",
@@ -132,7 +126,6 @@ def login_user():
     })
 
 @app.route('/add_order', methods=['POST'])
-@cross_origin()
 def add_record():
 
     user_id = request.json.get('user_id')
@@ -154,7 +147,6 @@ def add_record():
     return jsonify({"status": "ok", 'success': True})
 
 @app.route('/user_orders/<string:user_id>', methods=['GET'])
-@cross_origin()
 def get_user_orders(user_id):
     orders = db.session.query(Order.user_id,
                               Order.price_id,
@@ -211,7 +203,6 @@ def get_user_orders(user_id):
     return jsonify({'orders': orders_list})
 
 @app.route('/delete/<int:id>', methods=['DELETE'])
-@cross_origin()
 def delete_record(id):
     order = Order.query.get(id)
     if not order:
@@ -222,7 +213,6 @@ def delete_record(id):
 
 
 @app.route('/send_password', methods=['POST'])
-@cross_origin()
 def send_password():
     email = request.json.get('email')
     print(email)
@@ -239,9 +229,7 @@ def send_password():
     return jsonify({"status": "ok", 'success': True})
 
 @app.route("/logout", methods=["POST"])
-@cross_origin()
 def logout_user():
-    session.clear()
     return {"message": "User logged out successfully"}
 
 

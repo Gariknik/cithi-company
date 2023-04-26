@@ -1,6 +1,6 @@
 from dotenv import load_dotenv
 import os
-import redis
+from datetime import timedelta
 
 load_dotenv()
 
@@ -12,7 +12,10 @@ class ApplicationConfig:
     SQLALCHEMY_ECHO = True
     SQLALCHEMY_DATABASE_URI = r"sqlite:///cithi_db.db"
 
-    SESSION_TYPE = "redis"
+    SESSION_TYPE = "securecookie"
     SESSION_PERMANENT = False
     SESSION_USE_SIGNER = True
-    SESSION_REDIS = redis.from_url("redis://127.0.0.1:6379")
+    SESSION_COOKIE_NAME = "myapp_session"
+    SESSION_COOKIE_HTTPONLY = True
+    SESSION_COOKIE_SECURE = True
+    PERMANENT_SESSION_LIFETIME = timedelta(days=1)
