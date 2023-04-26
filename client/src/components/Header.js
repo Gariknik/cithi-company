@@ -130,7 +130,7 @@ const StyledLink = styled(Link)`
 `;
 
 const StyledMenu = styled.div`
-    width: 700px;
+    width: 600px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -176,9 +176,9 @@ const StyledLocaleButtons = styled.div`
 
 
 const StyledButtonLocale = styled.button`
-	width: 50px;
-	height: 50px;
-	font-size: 1.25rem;
+	width: 35px;
+	height: 35px;
+	font-size: 1rem;
 	font-weight: 400;
 	color: #242424;
 	background: #fff;
@@ -197,8 +197,8 @@ const StyledButtonLocale = styled.button`
 		border: 1px solid #83C166;
 	}; 
 	@media (max-width: 868px) {
-       max-width: 50px;
-       max-height: 50px;
+       max-width: 35px;
+       max-height: 35px;
     };
 `;
 
