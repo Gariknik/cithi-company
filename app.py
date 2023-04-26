@@ -74,6 +74,7 @@ def serve():
 
 
 @app.route("/register", methods=["POST"])
+@cross_origin()
 def register_user():
     username = request.json["username"]
     email = request.json["email"]
@@ -105,6 +106,7 @@ def register_user():
 
 
 @app.route("/login", methods=["POST"])
+@cross_origin()
 def login_user():
     email = request.json["email"]
     password = request.json["password"]
@@ -130,6 +132,7 @@ def login_user():
     })
 
 @app.route('/add_order', methods=['POST'])
+@cross_origin()
 def add_record():
 
     user_id = request.json.get('user_id')
@@ -151,6 +154,7 @@ def add_record():
     return jsonify({"status": "ok", 'success': True})
 
 @app.route('/user_orders/<string:user_id>', methods=['GET'])
+@cross_origin()
 def get_user_orders(user_id):
     orders = db.session.query(Order.user_id,
                               Order.price_id,
@@ -207,6 +211,7 @@ def get_user_orders(user_id):
     return jsonify({'orders': orders_list})
 
 @app.route('/delete/<int:id>', methods=['DELETE'])
+@cross_origin()
 def delete_record(id):
     order = Order.query.get(id)
     if not order:
@@ -217,6 +222,7 @@ def delete_record(id):
 
 
 @app.route('/send_password', methods=['POST'])
+@cross_origin()
 def send_password():
     email = request.json.get('email')
     print(email)
@@ -233,6 +239,7 @@ def send_password():
     return jsonify({"status": "ok", 'success': True})
 
 @app.route("/logout", methods=["POST"])
+@cross_origin()
 def logout_user():
     session.clear()
     return {"message": "User logged out successfully"}
