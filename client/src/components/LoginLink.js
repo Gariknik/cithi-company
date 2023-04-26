@@ -23,6 +23,7 @@ const StyledLink = styled.a`
     font-size: 0.94rem;
     font-weight: 400;
     color: rgba(0, 0, 0, 0.6);
+    background: #fff;
     text-decoration: none;
     transition: all .2s ease;
     :hover{

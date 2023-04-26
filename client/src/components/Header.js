@@ -134,6 +134,7 @@ const StyledMenu = styled.div`
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    background: #fff;
     @media (max-width: 1164px) {
         max-width: 400px;
     };

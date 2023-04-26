@@ -133,6 +133,7 @@ const StyledSection = styled.section`
     margin-top: 70px;
     justify-content: center;
     width: 100%;
+    background: #fff;
     @media (max-width: 1170px) {
        height: 100%;
     };

@@ -43,6 +43,7 @@ const StyledSuccessful = styled.div`
   color: #000;
   z-index: 999;
   box-shadow: 0 0 5px rgba(0, 0, 0, .3);
+  background: #fff;
 `;
 
 const StyledCkeckImg = styled.img`

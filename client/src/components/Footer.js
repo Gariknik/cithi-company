@@ -44,6 +44,7 @@ const StyledFooter = styled.footer`
     padding: 0 100px 50px;
     text-decoration: none;
 	display: flex;
+	background: #fff;
 	justify-content: space-between;
 	@media (max-width: 1100px) {
 	    justify-content: space-around;

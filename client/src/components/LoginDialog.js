@@ -147,6 +147,7 @@ export default LoginDialog;
 
 const StyledSection = styled.section`
     padding: 0 40px;
+    background: #fff;
     @media (max-width: 600px) {
        padding: 0;
     };

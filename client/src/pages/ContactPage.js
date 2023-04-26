@@ -56,6 +56,7 @@ const StyledSection = styled.section`
     justify-content: center;
     width: 100%;
     height: 768px;
+    background: #fff;
     @media (max-width: 1000px) {
         height: 100%;
     };

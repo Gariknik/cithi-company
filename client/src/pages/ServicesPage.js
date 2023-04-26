@@ -88,6 +88,7 @@ const StaledSection = styled.section`
     justify-content: center;
     width: 100%;
     height: 668px;
+    background: #fff;
     @media (max-width: 1000px) {
         height: 100%;
     };
