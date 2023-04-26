@@ -40,7 +40,7 @@ const ResetPasword = ({ onLoginSuccess, showResetPassword, setShowResetPassword 
 
             }
         } catch (error) {
-            setResponseMessage('Registration failed. Please try again.'); // сообщение об ошибке
+            setResponseMessage('Registration failed. Please try again.');
             setResponseIsError(true);
             reset();
         }

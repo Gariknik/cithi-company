@@ -69,7 +69,7 @@ const LoginDialog = ({ onLoginSuccess, showResetPassword, setShowResetPassword }
     const onSubmit = async (data, event) => {
 
         try {
-            const result = await loginUser(`http://127.0.0.1:5000/login`, data);
+            const result = await loginUser(`/login`, data);
             if (result) {
                 setResponseMessage(`Success ${result.message}`);
                 onLoginSuccess(result.data);
