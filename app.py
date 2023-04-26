@@ -69,7 +69,7 @@ with app.app_context():
 
 @app.route('/')
 @cross_origin()
-def index():
+def serve():
     return send_from_directory(app.static_folder, 'index.html')
 
 
