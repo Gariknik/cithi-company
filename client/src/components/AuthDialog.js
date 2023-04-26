@@ -100,7 +100,6 @@ const StyledOverlay = styled.div`
 
 const StyledSection = styled.section`
     display: flex;
-    background: #fff;
     align-items: center;
     justify-content: center;
     z-index: 999;

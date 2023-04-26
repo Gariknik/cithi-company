@@ -70,33 +70,40 @@ def serve():
     return send_from_directory(app.static_folder, 'index.html')
 
 @app.route('/services')
+@cross_origin()
 def services():
-    return render_template('index.html')
+    return send_from_directory(app.static_folder, 'index.html')
 
 @app.route('/services/services1')
+@cross_origin()
 def services_services1():
-    return render_template('index.html')
+    return send_from_directory(app.static_folder, 'index.html')
 
 @app.route('/services/services2')
+@cross_origin()
 def services_services2():
-    return render_template('index.html')
+    return send_from_directory(app.static_folder, 'index.html')
 
 @app.route('/services/services3')
+@cross_origin()
 def services_services3():
-    return render_template('index.html')
+    return send_from_directory(app.static_folder, 'index.html')
 
 
 @app.route('/about')
+@cross_origin()
 def about():
-    return render_template('index.html')
+    return send_from_directory(app.static_folder, 'index.html')
 
 @app.route('/contacts')
+@cross_origin()
 def contact():
-    return render_template('index.html')
+    return send_from_directory(app.static_folder, 'index.html')
 
 @app.route('/user')
+@cross_origin()
 def user():
-    return render_template('index.html')
+    return send_from_directory(app.static_folder, 'index.html')
 
 
 @app.route("/register", methods=["POST"])
