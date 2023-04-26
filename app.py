@@ -69,6 +69,35 @@ with app.app_context():
 def serve():
     return send_from_directory(app.static_folder, 'index.html')
 
+@app.route('/services')
+def services():
+    return render_template('index.html')
+
+@app.route('/services/services1')
+def services_services1():
+    return render_template('index.html')
+
+@app.route('/services/services2')
+def services_services2():
+    return render_template('index.html')
+
+@app.route('/services/services3')
+def services_services3():
+    return render_template('index.html')
+
+
+@app.route('/about')
+def about():
+    return render_template('index.html')
+
+@app.route('/contacts')
+def contact():
+    return render_template('index.html')
+
+@app.route('/user')
+def user():
+    return render_template('index.html')
+
 
 @app.route("/register", methods=["POST"])
 def register_user():
