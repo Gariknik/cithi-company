@@ -147,7 +147,6 @@ export default LoginDialog;
 
 const StyledSection = styled.section`
     padding: 0 40px;
-    background: #fff;
     @media (max-width: 600px) {
        padding: 0;
     };
@@ -170,6 +169,9 @@ const Title = styled.p `
     font-size: 0.9375rem;
     color: rgba(0, 0, 0, 0.5);
     font-weight: 400;
+    @media (max-width: 600px) {
+        margin: 0 1rem;
+     };
 `;
 
 const StyledMessage = styled.p `

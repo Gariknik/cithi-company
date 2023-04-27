@@ -97,12 +97,21 @@ const StyledContentBlock = styled.div`
 const StyledTitle = styled.h1`
     font-size: 3rem;
     font-weight: 500;
-    margin: 112px 0 30px 0;
+    margin: 112px 0 30px;
+    @media (max-width: 600px) {
+        font-size: 2.5rem;
+        text-align: center;
+        
+    };
 
 `;
 
 const StyledParagraph = styled.p `
     font-size: 1.25rem;
+     @media (max-width: 600px) {
+        text-align: center;
+        
+    };    
 `;
 
 

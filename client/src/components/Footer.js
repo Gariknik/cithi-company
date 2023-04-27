@@ -40,7 +40,6 @@ export default Footer;
 const StyledFooter = styled.footer`
     width: 100%;
     height: 100%;
-    background: #fff;
     padding: 0 100px 50px;
     text-decoration: none;
 	display: flex;

@@ -36,7 +36,6 @@ const StyledInput = styled.input`
     border-style: none;
     border-bottom-style: solid;
     border-width: 1px;
-    background: #fff;
     color: #000;
     ::placeholder {
          color: #616161;

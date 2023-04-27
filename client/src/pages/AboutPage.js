@@ -57,7 +57,9 @@ const StyledSection = styled.section`
     justify-content: center;
     width: 100%;
     height: 768px;
-    background: #fff;
+    @media (max-width: 600px) {
+       height: 100%;
+    };
 `;
 
 const StyledContainer = styled.div`
@@ -91,7 +93,7 @@ const StyledText = styled.p`
 
 const StyledWrap = styled.div`
     background-image: url(${AboutBackground});
-    background-rapid: nereid;
+    background-size: cover;
     position: relative;
     height: 347px;
     
@@ -101,7 +103,12 @@ const StyledWrap = styled.div`
     width: 100%;
     height: 100%;
     background-color: rgba(251, 218, 101, 0.6);
-    }
+    };
+    @media (max-width: 600px) {
+       height: 247px;
+    };
+    
+    
 `;
 const StyledBlock = styled.div`
     display: flex;
@@ -111,6 +118,7 @@ const StyledBlock = styled.div`
         flex-direction: column;
         padding: 30px 0;
     };
+    
 `;
 const StyledStatistic = styled.div`
     display: flex;
@@ -136,6 +144,10 @@ const StyledNum = styled.p`
     @media (max-width: 800px) {
         margin: 0 0 0 0;
     };
+    @media (max-width: 600px) {
+       font-size: 2rem;
+       margin: 0 0 2rem 0;
+    };
 `;
 
 const StyledName = styled.p`
@@ -143,5 +155,6 @@ const StyledName = styled.p`
     font-size: 1.5rem;
     font-weight: 600;
     z-index: 1;
+    margin: 0 0 2rem 0;
     
 `;

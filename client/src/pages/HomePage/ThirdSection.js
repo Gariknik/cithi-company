@@ -133,6 +133,11 @@ const StyledTitle = styled.h1`
     @media (max-width: 1000px) {
        margin: 5rem 0 0 0;
     };
+    @media (max-width: 600px) {
+        font-size: 2.5rem;
+        text-align: center;
+        
+    };
 `;
 
 const StyledContentBlock = styled.div`

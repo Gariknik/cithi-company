@@ -56,7 +56,6 @@ const StyledSection = styled.section`
     justify-content: center;
     width: 100%;
     height: 768px;
-    background: #fff;
     @media (max-width: 1000px) {
         height: 100%;
     };
@@ -83,6 +82,11 @@ const StyledTitle = styled.h1`
     margin: 7rem 0 2rem 0;
     @media (max-width: 1000px) {
        margin: 5rem 0 0 0;
+    };
+    @media (max-width: 600px) {
+        font-size: 2.5rem;
+        text-align: center;
+        
     };
 `;
 

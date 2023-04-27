@@ -121,15 +121,16 @@ const StyledSection = styled.section`
 
 const StyledBlock = styled.div`
     height: 655px;
+    position: relative;
     width: 455px;
     background: #fff;
     color: #000;
     border: solid 1px #83C166;
     display: block;
     margin: auto auto;
-    padding: 0 0 50px;
+    padding: 5rem 0 3rem;
     @media (max-width: 600px) {
-       padding: 0;
+       padding: 5rem 0 0;
        width: 100%;
     };
 `;
@@ -162,20 +163,7 @@ const StyledButtonClose = styled.button`
     font-weight: 400;
     color: #83C166;
     margin-bottom: 2rem;
-    position: relative;
+    position: absolute;
     top: 0;
-    left: 418px;
-    @media (max-width: 600px) {
-       
-    };
-    @media (max-width : 600px) {
-    };
-    @media (max-width : 533px) {
-        left: 388px;
-    };
-    @media (max-width : 360px) {
-        left: 322px;
-    };
-    @media (max-width : 320px) {
-    };
+    right: 0;
 `;

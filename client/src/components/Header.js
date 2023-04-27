@@ -108,7 +108,6 @@ const StyledHeader = styled.header`
     width: 100%;
     height: 70px;
     border-radius: 0 0 7px 7px;
-    background: #fff;
     padding: 10px 100px;
     text-decoration: none;
 	display: flex;
@@ -134,7 +133,6 @@ const StyledMenu = styled.div`
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    background: #fff;
     @media (max-width: 1164px) {
         max-width: 400px;
     };
@@ -182,7 +180,7 @@ const StyledButtonLocale = styled.button`
 	font-size: 1rem;
 	font-weight: 400;
 	color: #242424;
-	background: #fff;
+	background: none;
 	border: none;
 	text-decoration-color: #C9A31E;
 	transition: all .2s ease;

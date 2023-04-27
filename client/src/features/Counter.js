@@ -26,4 +26,8 @@ const CounterContainer = styled.div`
     font-weight: 600;
     margin: 0 0 2rem 0;
     z-index: 1;
+    @media (max-width: 600px) {
+       font-size: 2rem;
+       margin: 0 0 2rem 0;
+    };
 `;

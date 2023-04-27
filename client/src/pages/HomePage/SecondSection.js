@@ -172,6 +172,11 @@ const StyledTitle = styled.h1`
     font-size: 3rem;
     font-weight: 500;
     text-align: center;
+    @media (max-width: 600px) {
+        font-size: 2.5rem;
+        text-align: center;
+        
+    };
 `;
 
 const StyledParagraph = styled.p `

@@ -32,7 +32,8 @@ const ServicesPage = ({onLoginButtonClick, onLoginSuccessServ, loggedIn, data}) 
                     <StyledContentBlock className={isVisible ? 'item fade-in' : 'item'}>
                         <StyledText>{t("texts.textInBlock")}</StyledText>
                         <StyledWrap>
-                            <StyledCard>
+                            <StyledCard onClick={() => {onLoginButtonClick();
+                                loggedIn && onLoginSuccessServ('/services/services1', data);}}>
                                 <StyledBlockImgTitle>
                                     <StyledImg src={FirstIcon} alt={t("alts.firstCard")}/>
                                     <StyledTitleCard>{t("titles.firstCard")}</StyledTitleCard>
@@ -40,12 +41,11 @@ const ServicesPage = ({onLoginButtonClick, onLoginSuccessServ, loggedIn, data}) 
                                 <StyledParagraph className='card-text'>{t("texts.firstCard")}</StyledParagraph>
                                 <StyledButton
                                     value="&rarr;"
-                                    onClick={() => {onLoginButtonClick();
-                                        loggedIn && onLoginSuccessServ('/services/services1', data);
-                                        changeLanguage(i18n.language)}}
+                                    onClick={() => {changeLanguage(i18n.language)}}
                                     className='card-button'/>
                             </StyledCard>
-                            <StyledCard>
+                            <StyledCard onClick={() => {onLoginButtonClick();
+                                loggedIn && onLoginSuccessServ('/services/services2', data);}}>
                                 <StyledBlockImgTitle>
                                     <StyledImg src={SecondIcon} alt={t("alts.secondCard")}/>
                                     <StyledTitleCard>{t("titles.secondCard")}</StyledTitleCard>
@@ -53,12 +53,11 @@ const ServicesPage = ({onLoginButtonClick, onLoginSuccessServ, loggedIn, data}) 
                                 <StyledParagraph className='card-text'>{t("texts.secondCard")}</StyledParagraph>
                                 <StyledButton
                                     value="&rarr;"
-                                    onClick={() => {onLoginButtonClick();
-                                        loggedIn && onLoginSuccessServ('/services/services2', data);
-                                        changeLanguage(i18n.language)}}
+                                    onClick={() => {changeLanguage(i18n.language)}}
                                     className='card-button'/>
                             </StyledCard>
-                            <StyledCard>
+                            <StyledCard onClick={() => {onLoginButtonClick();
+                                loggedIn && onLoginSuccessServ('/services/services3', data);}}>
                                 <StyledBlockImgTitle>
                                     <StyledImg src={ThirdIcon} alt={t("alts.thirdCard")}/>
                                     <StyledTitleCard>{t("titles.thirdCard")}</StyledTitleCard>
@@ -66,9 +65,7 @@ const ServicesPage = ({onLoginButtonClick, onLoginSuccessServ, loggedIn, data}) 
                                 <StyledParagraph className='card-text'>{t("texts.thirdCard")}</StyledParagraph>
                                 <StyledButton
                                     value="&rarr;"
-                                    onClick={() => {onLoginButtonClick();
-                                        loggedIn && onLoginSuccessServ('/services/services3', data);
-                                        changeLanguage(i18n.language)}}
+                                    onClick={() => {changeLanguage(i18n.language)}}
                                     className='card-button'/>
                             </StyledCard>
                         </StyledWrap>
@@ -88,7 +85,6 @@ const StaledSection = styled.section`
     justify-content: center;
     width: 100%;
     height: 668px;
-    background: #fff;
     @media (max-width: 1000px) {
         height: 100%;
     };
@@ -109,6 +105,11 @@ const StyledTitle = styled.h1`
     margin: 7rem 0 0 0;
     @media (max-width: 1000px) {
        margin: 5rem 0 0 0;
+    };
+    @media (max-width: 600px) {
+        font-size: 2.5rem;
+        text-align: center;
+        
     };
 `;
 
