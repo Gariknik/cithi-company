@@ -110,6 +110,9 @@ const StyledContainer = styled.div`
     padding: 0 100px;
     display: flex;
     flex-direction: column;
+    @media (max-width: 600px) {
+       padding: 0 2rem;
+    };
 `;
 
 const StyledTitle = styled.h1`

@@ -117,10 +117,7 @@ const StyledHeader = styled.header`
         padding: 10px 60px;
     };
     @media (max-width: 600px) {
-       padding: 0 50px;
-    };
-    @media (max-width: 410px) {
-       padding: 0 10px;
+       padding: 0 1rem;
     };
 `;
 
@@ -221,7 +218,6 @@ const StyledHamburger = styled.button`
     border: none;
     cursor: pointer;
     padding: 0;
-    margin-right: 20px;
 
     &:focus {
       outline: none;
@@ -252,7 +248,7 @@ const StyledHamburger = styled.button`
 `;
 
 const ButtonsWrapper = styled.div`
-        width: 100px;
+        max-width: 100px;
         display: flex;
         justify-content: space-between;
     `;
@@ -262,9 +258,6 @@ const StyledButtonLogOut = styled.button`
     cursor: pointer;
     width: 30px;
     border: none;
-    @media (max-width: 768px) {
-        display: none;
-    };
     `;
 
 const StyledLinkUserCabinet = styled(Link)`
