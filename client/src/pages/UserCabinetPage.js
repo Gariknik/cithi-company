@@ -197,6 +197,10 @@ const StyledData = styled.div`
     padding: 0 2rem;
     height: 3rem;
     width: 170px;
+    @media (max-width: 900px) {
+       width: 200px;
+       padding: 0;
+    };
     
 `;
 
@@ -210,10 +214,9 @@ const StyledItem = styled.div`
     justify-content: center;
     margin-top: 2.1rem;
     @media (max-width: 900px) {
-       max-width: 760px;
        flex-direction: column;
        height: 280px;
-       width: 280px;
+       width: 240px;
        padding: 1rem;
     };
 `;
@@ -248,10 +251,9 @@ const StyledItemHower = styled.div`
     overflow: hidden;
     display: flex;
     @media (max-width: 900px) {
-       max-width: 660px;
        flex-direction: column;
        height: 280px;
-       width: 280px;
+       width: 240px;
        padding: 1rem;
     };
 `;

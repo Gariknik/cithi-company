@@ -161,7 +161,8 @@ const StyledCard = styled.div`
     text-align: center;
     z-index: 1;
     @media (max-width: 600px) {
-        width: 270px;
+        width: 240px;
+        height: auto;
         margin: 2rem 0;    
     };
 `;
