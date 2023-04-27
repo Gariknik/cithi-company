@@ -262,4 +262,5 @@ const StyledButtonLogOut = styled.button`
 
 const StyledLinkUserCabinet = styled(Link)`
     cursor: pointer;
+    margin: 0px 0.5rem 0 0;
     `;
