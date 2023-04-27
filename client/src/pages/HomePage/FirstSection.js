@@ -6,6 +6,8 @@ import firstImg from "../../assets/pictures/homepage/firstImgFirstSection.svg";
 import secondImg from "../../assets/pictures/homepage/secondImgFirstSection.svg";
 import thirdImg from "../../assets/pictures/homepage/thirdImgFirstSection.svg";
 import AuthDialog from "../../components/AuthDialog";
+import ShemTop from "../../assets/pictures/homepage/ShemTop.svg";
+import ShemBottom from "../../assets/pictures/homepage/ShemBottom.svg";
 
 const images = [
     firstImg,
@@ -53,7 +55,11 @@ const FirstSection = ({ onLoginButtonClick, onLoginSuccessServ, loggedIn, data }
                                     loggedIn && onLoginSuccessServ('/services/services1', data);
                                     changeLanguage(i18n.language);}} />
                         </StyledContentBlock>
-                        {!isSmallScreen && <SliderFirstSection images={images} />}
+                        <StyledWrapperSlider>
+                            <ShemImgBottom src={ShemBottom} alt="shem" />
+                            {!isSmallScreen && <SliderFirstSection images={images} />}
+                            <ShemImgTop src={ShemTop} alt="shem"/>
+                        </StyledWrapperSlider>
                     </StyledBlock>
                 </StyledWrap>
             </StyledContainer>
@@ -67,11 +73,17 @@ export default FirstSection;
 const StyledSection = styled.section`
     margin-top: 70px;
     width: 100%;
+    height: 600px;
+    @media (max-width: 1064px) {
+       max-height: 600px;
+    };
     @media (max-width: 600px) {
        padding: 0 50px;
+       max-height: 400px;
     };
     @media (max-width: 410px) {
        padding: 0 10px;
+
     };
 `;
 
@@ -87,9 +99,17 @@ const StyledWrap = styled.div`
 `;
 
 const StyledContentBlock = styled.div`
-    margin-top: 100px;
-    @media (max-width: 1000px) {
+    margin: 100px 0 250px 100px;
+    position: absolute;
+    left: 0;
+    @media (max-width: 1064px) {
+        text-align: center;
+        position: static;
         margin-top: 0;
+    };
+    @media (max-width: 600px) {
+       max-height: 400px;
+       margin: 0;
     };
 `;
 
@@ -98,6 +118,7 @@ const StyledTitle = styled.h1`
     font-size: 3rem;
     font-weight: 500;
     margin: 112px 0 30px;
+    text-align: center;
     @media (max-width: 600px) {
         font-size: 2.5rem;
         text-align: center;
@@ -154,4 +175,34 @@ const StyledButton = styled.input`
 const StyledBlock = styled.div`
     display: flex;
     justify-content: space-around;
+`;
+
+const StyledWrapperSlider = styled.div `
+    margin: 70px 100px 70px 0;
+    position: absolute;
+    right: 0;
+    @media (max-width: 1064px) {
+        display: none
+    };
+    
+`;
+
+const ShemImgBottom = styled.img`
+    position: relative;
+    top: 430px;
+    left: 0;
+    @media (max-width: 1064px) {
+        display: none
+    };
+
+`;
+
+const ShemImgTop = styled.img`
+    position: relative;
+    top: -480px;
+    right: -370px;
+    @media (max-width: 1064px) {
+        display: none
+    };
+
 `;

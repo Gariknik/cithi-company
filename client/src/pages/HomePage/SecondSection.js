@@ -63,6 +63,10 @@ const StyledSection = styled.section`
     @media (max-width: 1000px) {
         height: 668px;
     };
+    @media (max-width: 600px) {
+       max-height: 400px;
+    };
+
 `;
 
 const StyledContainer = styled.div`

@@ -5,9 +5,6 @@ import ThirdSectionBackGround from "../../assets/pictures/homepage/ThirdSectionB
 import FirstIcon from "../../assets/pictures/homepage/ThirdSectionFirstCardImg.svg";
 import SecondIcon from "../../assets/pictures/homepage/ThirdSectionSecondCardImg.svg";
 import ThirdIcon from "../../assets/pictures/homepage/ThirdSectionThirdCardImg.svg";
-import VectorOne from "../../assets/pictures/homepage/ThirdSectionVectorOne.svg";
-import VectorTwo from "../../assets/pictures/homepage/ThirdSectionVectorTwo.svg";
-import VectorThree from "../../assets/pictures/homepage/ThirdSectionVectorThree.svg";
 import AuthDialog from "../../components/AuthDialog";
 
 const ThirdSection = ({onLoginButtonClick, onLoginSuccessServ, loggedIn, data}) => {
@@ -64,8 +61,6 @@ const ThirdSection = ({onLoginButtonClick, onLoginSuccessServ, loggedIn, data}) 
                     <StyledParagraph>{card.text}</StyledParagraph>
                     <StyledButton type="button" value={t("button")} onClick={card.onClick} />
                 </StyledCard>
-                {index === 0 && <StyledVectorTwo src={VectorTwo} />}
-                {index === 1 && <StyledVectorThree src={VectorThree} />}
             </React.Fragment>
         ));
     };
@@ -82,7 +77,6 @@ const ThirdSection = ({onLoginButtonClick, onLoginSuccessServ, loggedIn, data}) 
                                 {t("titles.h")}
                             </StyledHeadTwo>
                         </div>
-                        <StyledVectorOne src={VectorOne}/>
                         {renderCards()}
                     </StyledContentBlock>
                     {isAuthDialogOpen && <AuthDialog onClose={closeAuthDialog} />}

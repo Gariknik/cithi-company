@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
-import ShemBottom from "../assets/pictures/homepage/ShemBottom.svg"
-import ShemTop from "../assets/pictures/homepage/ShemTop.svg"
 
 
 
@@ -21,7 +19,6 @@ const SliderFirstSection = ({ images }) => {
     return (
 
         <StyledBlock  className="slider">
-            <ShemImgBottom src={ShemBottom} />
             <StyledSliderkWrap className="slider__image-container">
 
                 {images.map((src, i) => (
@@ -35,7 +32,6 @@ const SliderFirstSection = ({ images }) => {
                     />
                 ))}
             </StyledSliderkWrap>
-            <ShemImgTop src={ShemTop} />
             <StyledButtonBlock  className="slider__indicators">
                 {images.map((_, i) => (
                     <StyledButton
@@ -54,30 +50,19 @@ export default SliderFirstSection;
 
 
 const StyledBlock = styled.div `
-    margin-top: 70px;
+ 
 `;
 
 const StyledSliderkWrap = styled.div `
     display: flex;
     overflow-x: hidden;
     width: 450px;
-    width: 450px;
     margin: 0 auto;
     display: flex;
     
 `;
 
-const ShemImgBottom = styled.img`
-    position: absolute;
-    top: 500px;
-    right: 560px;
-`;
 
-const ShemImgTop = styled.img`
-    position: absolute;
-    top: 140px;
-    right: 180px;
-`;
 
 const StyledImg = styled.img`
     flex: 0 0 auto;
