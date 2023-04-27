@@ -141,6 +141,9 @@ const StyledSection = styled.section`
 const StyledContainer = styled.div`
     padding: 100px 100px 100px;
     display: flex;
+    @media (max-width: 600px) {
+       padding: 2rem;
+    };
 `;
 
 const StyledWrapImg = styled.div`

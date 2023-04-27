@@ -156,6 +156,10 @@ const StyledCard = styled.div`
     flex-direction: column;
     text-align: center;
     z-index: 1;
+     @media (max-width: 600px) {
+        width: 270px;
+        margin: 2rem 0;    
+    };
 `;
 
 
