@@ -248,7 +248,7 @@ const StyledHamburger = styled.button`
 `;
 
 const ButtonsWrapper = styled.div`
-        max-width: 100px;
+        max-width: 200px;
         display: flex;
         justify-content: space-between;
     `;
