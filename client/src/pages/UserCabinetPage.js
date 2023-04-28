@@ -100,7 +100,7 @@ const UserCabinetPage = ({ data }) => {
                 <>
                     <StyledItem>
                         <StyledData>
-                            <StyledText>---No orders---</StyledText>
+                            <StyledText>-No orders-</StyledText>
                         </StyledData>
                     </StyledItem>
                 </>
