@@ -111,7 +111,7 @@
 				"cardThree": "Programming"
 			}
 		},
-		"button":  "Application",
+		"button": "Application",
 		"alts": {
 			"iconLogin": "icon for a cabinet link",
 			"iconСreateAccount": "icon for a user registration link",
@@ -150,7 +150,7 @@
 			"thirdCard": "Set of icons",
 			"fourthCard": "Website"
 		},
-		"btnCards": "Application",
+		"btnCards": "Order",
 		"btnDiff": "See more"
 	},
 	"services2": {
@@ -162,7 +162,7 @@
 			"thirdCard": "Equipment",
 			"fourthCard": "Diagnostics"
 		},
-		"btnCards": "Application",
+		"btnCards": "Order",
 		"btnDiff": "See more"
 	},
 	"services3": {
@@ -174,7 +174,7 @@
 			"thirdCard": "Testing",
 			"fourthCard": "Development"
 		},
-		"btnCards": "Application",
+		"btnCards": "Order",
 		"btnDiff": "See more"
 	},
 	"about": {
