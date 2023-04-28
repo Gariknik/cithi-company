@@ -62,7 +62,8 @@ const ServicesPageInOne = ({data}) => {
         return cardsData.map((card, index) => (
             <StyledCard key={index}>
                 <StyledTitleCard>{card.title}</StyledTitleCard>
-                <StyledButton value={t("btnCards")} onChange={changeLanguage} onClick={() => handleButtonClick(card.id)} />
+                <StyledButton value={t("btnCards")} onClick={() => {handleButtonClick(card.id);
+                    changeLanguage(i18n.language);}} />
             </StyledCard>
         ));
     };
