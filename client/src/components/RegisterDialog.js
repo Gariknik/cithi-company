@@ -198,7 +198,7 @@ const StyledButtonSubmit = styled.input`
     display: flex;
     width: 171px;
     height: 41px;
-    margin: 3rem 2rem 3rem;
+    margin: 3rem auto;
     background: #83C166;
     border-radius: 5px;
     border: none; 
