@@ -210,6 +210,7 @@ const StyledItem = styled.div`
     border-radius: 30px;
     box-shadow: 0 0 5px rgba(0, 0, 0, .3);
     display: flex;
+    padding: 0.5rem 0;
 
     justify-content: center;
     margin-top: 2.1rem;
@@ -237,6 +238,7 @@ const StyledBtnTogle = styled.button`
     width: 2rem;
     height: 2rem;
     cursor: pointer;
+    align-self: center;
     `;
 
 const StyledItemHower = styled.div`
@@ -250,6 +252,7 @@ const StyledItemHower = styled.div`
     background: rgba(0, 0, 0, .2);
     overflow: hidden;
     display: flex;
+    padding: 0.5rem 0;
     @media (max-width: 900px) {
        flex-direction: column;
        height: 280px;
@@ -265,5 +268,6 @@ const StyledBtnClose = styled.button`
     width: 2rem;
     height: 2rem;
     cursor: pointer;
+    align-self: center;
     
     `;
